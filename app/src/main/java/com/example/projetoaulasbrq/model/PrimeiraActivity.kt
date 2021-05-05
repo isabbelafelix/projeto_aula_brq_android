@@ -90,16 +90,3 @@ class PrimeiraActivity : AppCompatActivity() {
 
 
 
-
-// SUBCLASSE: LIVROS = NOME, AUTOR, EDITORA, (CAPA)
-
-// CLASSE: LIVROSINFANTIL
-// CLASSE: LIVROSFICÇÃO
-// CLASSE: LIVROSFANTASIA
-
-
-
-
-
-
-
