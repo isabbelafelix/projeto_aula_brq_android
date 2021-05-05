@@ -9,6 +9,7 @@ import com.example.projetoaulasbrq.animal_oo.Gato
 import com.example.projetoaulasbrq.banco_oo.Banco
 import com.example.projetoaulasbrq.banco_oo.Cliente
 import com.example.projetoaulasbrq.banco_oo.Funcionario
+import com.example.projetoaulasbrq.livros_oo.Livros
 import com.example.projetoaulasbrq.livros_oo.LivrosFantasia
 import com.example.projetoaulasbrq.livros_oo.LivrosFiccao
 import com.example.projetoaulasbrq.livros_oo.LivrosInfantis
@@ -39,19 +40,23 @@ class PrimeiraActivity : AppCompatActivity() {
 
         // EXEMPLOS DE HERANÇAS E CLASSES LIVROS
 
-        val livrosInfantis = LivrosInfantis(nome = "O pequeno Principe -", autor = "Autor: Antoine de Saint-Exupéry - ", editora = "Editora: Geração Editorial")
-        val livrosFiccao = LivrosFiccao(nome = "O mundo de Sofia -", autor = "Autor: Jostein Gaarder -", editora = "Editora: Seguinte")
-        val livrosFantasia = LivrosFantasia(nome = "O Hobbit -", autor = "Autor: J. R. R. Tolkien -", editora = "Editora: WMF Martins Fontes")
+        val livrosInfantis = LivrosInfantis(nome = "O pequeno Principe", autor = "- Autor: Antoine de Saint-Exupéry", editora = "- Editora: Geração Editorial")
+        val livrosFiccao = LivrosFiccao(nome = "O mundo de Sofia", autor = "- Autor: Jostein Gaarder", editora = "- Editora: Seguinte")
+        val livrosFantasia = LivrosFantasia(nome = "O Hobbit", autor = "- Autor: J. R. R. Tolkien", editora = "- Editora: WMF Martins Fontes")
+
+        dadosLivrosConfirmados(livrosInfantis)
+        dadosLivrosConfirmados(livrosFiccao)
+        dadosLivrosConfirmados(livrosFantasia)
 
 
-        println(livrosInfantis.dadosLivros())
-        livrosInfantis.modeloDeCapa()
-
-        println(livrosFiccao.dadosLivros())
-        livrosFiccao.modeloDeCapa()
-
-        println(livrosFantasia.dadosLivros())
-        livrosFantasia.modeloDeCapa()
+//        println(livrosInfantis.dadosLivros())
+//        livrosInfantis.modeloDeCapa()
+//
+//        println(livrosFiccao.dadosLivros())
+//        livrosFiccao.modeloDeCapa()
+//
+//        println(livrosFantasia.dadosLivros())
+//        livrosFantasia.modeloDeCapa()
 
 
     }
@@ -74,7 +79,11 @@ class PrimeiraActivity : AppCompatActivity() {
 }
 
 
+    // EXEMPLOS DE HERANÇAS E CLASSES LIVROS
 
+    fun dadosLivrosConfirmados(livros: Livros) {
+        println("Os dados do livro  ${livros.nome} estão confirmados")
+    }
 
 
 
