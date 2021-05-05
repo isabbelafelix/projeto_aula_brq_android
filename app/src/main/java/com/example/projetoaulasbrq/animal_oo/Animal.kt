@@ -1,4 +1,4 @@
-package com.example.projetoaulasbrq
+package com.example.projetoaulasbrq.animal_oo
 
 open class Animal(
     open val nome: String,

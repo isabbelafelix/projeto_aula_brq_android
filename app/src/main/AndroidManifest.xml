@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoAulasBrq">
-        <activity android:name=".PrimeiraActivity">
+        <activity android:name=".model.PrimeiraActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
